@@ -24,7 +24,7 @@
 				<input type="text" name="dataSource" value="Neo4j" size="30" />
 			</p>
 			<p>Neo4j URL:<br>
-				<input type="text" name="neo4jUrl" value="bolt://localhost" size="68" />
+				<input type="text" name="neo4jUrl" value="bolt://ec2-54-158-206-210.compute-1.amazonaws.com" size="68" />
 			</p>
 			<p>Username:<br>
 				<input type="text" name="username" value="neo4j" size="30" />
@@ -50,6 +50,18 @@
 				<br>
 				<input type="text" name="tableName5" value="Table5" size="16" />:
 				<textarea name="cypherQuery5" class="expand" rows="1" cols="46" /></textarea>
+			</p>
+			<p>
+				<div class="pure-form pure-form-aligned" id="queryList">
+				  <label for="ddlList">Query Options</label>
+				    <select id="ddlList">
+				  		<option value="1">Contributions to 2016 Presidential Candidates</option>
+				  		<option value="2">Expenditures by 2016 Presidential Candidates</option>
+				  		<option value="3">Custom Cypher Query</option>
+				  		<option value="4">What's Connected to What</option>
+
+				</select>
+				</div>
 			</p>
 			<p>
 				<button id="submitButton" type="button" >Submit Query</button>
