@@ -141,7 +141,7 @@ function sendLoginQuery (callback) {
 	var neoserver = $("#server").val();
 	var username = $("#username").val();
 	var password = $("#password").val();
-	var neoserverURL = neoserver + "/tableau/v1/service/connect";
+	var neoserverURL = neoserver + "/db/data/";
 	var logincred = btoa(username + ':' + password);
   $.ajax({
     cache:false,
